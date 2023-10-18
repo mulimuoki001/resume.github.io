@@ -92,13 +92,19 @@ header nav ul li a{
     .header-info{
         text-align: centre;
     }
+    header nav ul li {
+        font-size: 14px;
+    }
 }
 
-/* Media Query for 240px viewport */
-@media screen and (max-width: 240px) {
+/* Media Query for 360px viewport */
+@media screen and (max-width: 360px) {
     .header-info{
         flex-direction: column;
         justify-content: center;
+    }
+    header nav ul li {
+        font-size: 10px;
     }
 }
 
