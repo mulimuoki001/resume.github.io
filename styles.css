@@ -45,7 +45,7 @@ header nav ul li {
     
     margin-left: 20px;
     font-style: oblique;
-    font-size: x-large;
+    font-size: 15px;
     
 
 }
@@ -94,8 +94,8 @@ header nav ul li a{
     }
 }
 
-/* Media Query for 300px viewport */
-@media screen and (max-width: 300px) {
+/* Media Query for 240px viewport */
+@media screen and (max-width: 240px) {
     .header-info{
         flex-direction: column;
         justify-content: center;
