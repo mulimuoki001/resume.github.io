@@ -13,12 +13,11 @@
     <div class="container">
         <header>
             <div class="header-info">
-                <h1>Brian Muli Muoki</h1>
-                <p>Nationality: Kenyan</p>
-                <p>DOB: 14/01/2004</p>
-                <p>Email: b.muoki@alustudent.com</p>
-                <p>Address: 123 Kigali Rwanda</p>
-                <p>Phone: +250791704016</p>
+                <h1><b>Brian Muli Muoki</b></h1>
+                <p><b>Nationality:</b> Kenyan</p>
+                <p><b>Email:</b> b.muoki@alustudent.com</p>
+                <p><b>Address:</b> 123 Kigali Rwanda</p>
+                <p><b>Phone:</b> +250791704016</p>
             </div>
             <nav>
                 <ul>
@@ -53,15 +52,15 @@
 
         <div class="section-heading" id="education">Education</div>
         <div class="education">
-            <h3> 3. African Leadership University</h3>
+            <h3> <b>(2022-Present) African Leadership University</b></h3>
             <p> &#10003; Bachelor of Science in Software Engineering</p>
             <p> &#10003; GPA: 4.5</p>
 
-            <h3> 2. Starehe Boys' Centre and School</h3>
+            <h3><b> (2018-2022) Starehe Boys' Centre and School</b></h3>
             <P> &#10003; Highschool Diploma</P>
             <p> &#10003; Grade: B+, 72 points</p>
 
-            <h3>1. Mukuru Kwa Njenga Primary</h3>
+            <h3><b>(2010-2017) Mukuru Kwa Njenga Primary School</b></h3>
             <P> &#10003; Primary School Certificate</P>
             <p>&#10003; Grade: A, 82 points</p>
 
@@ -77,7 +76,17 @@
             </ul>
         </div>
     </div>
-
+    <script>
+        // Javascript code for the header
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>

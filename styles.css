@@ -11,11 +11,9 @@ h1{
 h3 {
     margin-bottom: 10px;
 }
-.skills ul li{
-    text-decoration: none;
- }
+
 header  {
-    background-color: rgb(94, 207, 188);
+    background-color: rgb(129, 225, 238);
     height: fit-content;
     display: flex;
     justify-content: space-between;
@@ -23,6 +21,13 @@ header  {
     margin-bottom: 20px;
     border-radius: 10px;
 }
+header.scrolled {
+    background-color: rgb(200, 255, 0);
+  }
+ 
+ 
+ 
+ 
 header nav ul li:hover {
     cursor:crosshair;
     background-color: rgb(236, 241, 237);
@@ -52,7 +57,7 @@ header nav ul li a{
 .section-heading {
     font-size: 24px;
     margin-bottom: 20px;
-    border-bottom: 5px solid rgb(21, 202, 60);
+    border-bottom: 5px solid orange;
     font-weight: bold;
     color:rgb(7, 9, 128);
 }
@@ -95,3 +100,4 @@ header nav ul li a{
         justify-content: center;
     }
 }
+
