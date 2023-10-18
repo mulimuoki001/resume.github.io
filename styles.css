@@ -1,8 +1,8 @@
 .container{
-    max-width:max-content;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgb(179, 189, 197);
+    background-color: rgb(70, 146, 146);
 }
 h1{
     font-size: 36px;
@@ -11,53 +11,60 @@ h1{
 h3 {
     margin-bottom: 10px;
 }
-
+.skills ul li{
+    text-decoration: none;
+ }
 header  {
-    background-color: rgb(109, 163, 163);
+    background-color: rgb(94, 207, 188);
     height: fit-content;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 header nav ul li:hover {
     cursor:crosshair;
-    background-color: rgb(21, 202, 60);
+    background-color: rgb(236, 241, 237);
 }
 header  nav ul {
     border-top: 0px;
    display: flex;
    list-style: none;
    padding: 0;
-   margin: 0;
+   margin: 40px;
   
 }
 header nav ul li {
+    
     margin-left: 20px;
-    color: rgb(216, 145, 39);
+    font-style: oblique;
+    font-size: x-large;
+    
 
 }
 
 header nav ul li a{
     text-decoration: none;
+    color: rgb(56, 28, 212);
+    margin-top: 0px;
 }
 .section-heading {
     font-size: 24px;
     margin-bottom: 20px;
     border-bottom: 5px solid rgb(21, 202, 60);
     font-weight: bold;
-    color:rgb(7, 87, 34);
+    color:rgb(7, 9, 128);
 }
 .work-experience, .personal-projects, .education, .skills {
     margin-bottom: 20px;
 }
-.work-experience > h3, .personal-projects > h3, .education > h3, .skills > h3 {
+.work-experience > h3, .personal-projects > h3, .education > h3{
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.work-experience p, .personal-projects p, .education p, .skills p {
+.work-experience p, .personal-projects p, .education p {
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -65,7 +72,26 @@ header nav ul li a{
     list-style: disc;
     margin-left: 20px;
  }
-.work-experience{
-    border-radius: 5px;
+
+
+/* Media Query for 720px viewport */
+@media screen and (max-width: 720px) {
+    header {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    header nav ul {
+        margin-left: -10px;
+    }
+    .header-info{
+        text-align: centre;
+    }
 }
 
+/* Media Query for 300px viewport */
+@media screen and (max-width: 300px) {
+    .header-info{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
